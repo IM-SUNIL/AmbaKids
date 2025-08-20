@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities — Amba Kids Home, Panthal</title>
+  <meta name="description" content="Explore smart classrooms, library, playground, transport, computer lab and activity rooms at Amba Kids Home, Panthal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">AKH</div>
+        <div class="brand-name">
+          <strong>Amba Kids Home</strong>
+          <span>Panthal</span>
+        </div>
+      </a>
+      <nav class="nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Facilities</h1>
+          <p class="section-subtitle">Spaces designed for safety, exploration, and growth.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card reveal"><div class="icon icon-sky">📺</div><h3>Smart Classrooms</h3><p>Interactive digital boards and engaging content.</p></div>
+          <div class="card reveal"><div class="icon icon-yellow">📖</div><h3>Library</h3><p>Age-appropriate books to spark a love for reading.</p></div>
+          <div class="card reveal"><div class="icon icon-green">⚽</div><h3>Playground</h3><p>Safe outdoor play area for sports and fun.</p></div>
+          <div class="card reveal"><div class="icon icon-sky">🚌</div><h3>Transportation</h3><p>Reliable school transport with trained staff.</p></div>
+          <div class="card reveal"><div class="icon icon-yellow">🖥️</div><h3>Computer Lab</h3><p>Early exposure to computers in a supervised setting.</p></div>
+          <div class="card reveal"><div class="icon icon-green">🎭</div><h3>Activity Rooms</h3><p>Music, art, and free-play spaces for creativity.</p></div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:18px;">
+          <div class="card reveal">
+            <h3>Glimpses</h3>
+            <img src="https://images.unsplash.com/photo-1472162314594-eca3c3d90df1?q=80&w=1600&auto=format&fit=crop" alt="Children reading in a library">
+          </div>
+          <div class="card reveal">
+            <h3>Vibrant Campus</h3>
+            <img src="https://images.unsplash.com/photo-1596495578065-8a35f5ac19f3?q=80&w=1600&auto=format&fit=crop" alt="Playground with happy kids">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom:8px; display:inline-flex;">
+            <div class="brand-logo">AKH</div>
+            <div class="brand-name">
+              <strong>Amba Kids Home</strong>
+              <span>Panthal</span>
+            </div>
+          </a>
+          <p class="muted">Nurturing Young Minds for a Bright Future.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">👍</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div style="display:grid; gap:6px;">
+            <a href="admissions.html">Admissions</a>
+            <a href="about.html">About Us</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p class="muted">Amba Kids Home, Panthal<br>Phone: +91-XXXXXXXXXX<br>Email: info@ambakidshome.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> Amba Kids Home, Panthal. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

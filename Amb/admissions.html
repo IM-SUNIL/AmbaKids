@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admissions — Amba Kids Home, Panthal</title>
+  <meta name="description" content="Admission process and online inquiry form for Amba Kids Home, Panthal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">AKH</div>
+        <div class="brand-name">
+          <strong>Amba Kids Home</strong>
+          <span>Panthal</span>
+        </div>
+      </a>
+      <nav class="nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Admissions</h1>
+          <p class="section-subtitle">We welcome applications for Nursery, LKG, UKG, and Primary classes.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <h3>Admission Process</h3>
+            <ol>
+              <li>Submit an online inquiry form.</li>
+              <li>Visit the school for counseling and campus tour.</li>
+              <li>Document verification and interaction (if required).</li>
+              <li>Confirm admission by paying fees and submitting documents.</li>
+            </ol>
+            <a class="btn btn-secondary" href="assets/files/Prospectus.pdf" download>Download Prospectus (PDF)</a>
+            <p class="help" style="margin-top:8px;">Note: Use the link above after the school shares the official prospectus file.</p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Online Inquiry Form</h3>
+            <form class="form" id="admissions-form">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+              <div class="field">
+                <label for="age">Child's Age</label>
+                <input id="age" name="age" type="number" min="2" max="12" required>
+              </div>
+              <div class="field">
+                <label for="class">Class Applying For</label>
+                <select id="class" name="class" required>
+                  <option value="" disabled selected>Select Class</option>
+                  <option>Nursery</option>
+                  <option>LKG</option>
+                  <option>UKG</option>
+                  <option>Primary</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="contact">Contact Number</label>
+                <input id="contact" name="contact" type="tel" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+              </div>
+              <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+              <div class="success-msg" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom:8px; display:inline-flex;">
+            <div class="brand-logo">AKH</div>
+            <div class="brand-name">
+              <strong>Amba Kids Home</strong>
+              <span>Panthal</span>
+            </div>
+          </a>
+          <p class="muted">Nurturing Young Minds for a Bright Future.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">👍</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div style="display:grid; gap:6px;">
+            <a href="admissions.html">Admissions</a>
+            <a href="about.html">About Us</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p class="muted">Amba Kids Home, Panthal<br>Phone: +91-XXXXXXXXXX<br>Email: info@ambakidshome.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> Amba Kids Home, Panthal. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
